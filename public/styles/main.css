@@ -1,10 +1,11 @@
 header {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 42rem;
 
     background-image: url('../assets/images/desktop/image-hero.jpg');
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -38,8 +39,8 @@ header .header-container .header__content {
     display: flex;
     align-items: center;
     width: 40rem;
-    height: 15rem;
     margin-top: 100px;
+    margin-bottom: 100px;
 
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3rem;
@@ -51,7 +52,7 @@ header .header-container .header__content {
 
 header .header-container .header__content h1 {
     font-size: 3rem;
-    margin-left: 1rem;
+    margin: 2rem;
     color: var(--white-color);
 }
 
@@ -62,4 +63,19 @@ header .header-container .header__content h1 {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 700px) {
+    header nav ul {
+        display: none;
+    }
+
+    header .header-container .header__content {
+        width: 20rem;
+    }
+
+    header .header-container .header__content h1 {
+        font-size: 2.2rem;
+        line-height: 1;
+    }
 }
