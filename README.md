@@ -1,5 +1,7 @@
 # Frontend Mentor - Loopstudios landing page
 
+Link to page: https://fabriciocunhauk.github.io/LOOPSTUDIO-LANDING-PAGE
+
 ![Design preview for the Loopstudios landing page coding challenge](./public/assets/design/desktop-preview.jpg)
 
 ## Welcome! 👋
