@@ -1,6 +1,5 @@
 import { desktopData } from '../../data/images-data.js';
 import { mobileData } from '../../data/images-data.js';
-console.log(mobileData);
 
 const cardsContainer = document.getElementById('cards-container');
 
