@@ -15,7 +15,7 @@ cardHeaderDiv.appendChild(cardHeaderTitle);
 
 const cardHeaderBtn = document.createElement('button');
 cardHeaderBtn.classList.add("cards__section-btn");
-cardHeaderBtn.textContent = "See All";
+cardHeaderBtn.textContent = "SEE ALL";
 cardHeaderDiv.appendChild(cardHeaderBtn);
 
 // Cards
@@ -56,3 +56,8 @@ cardImages.map(card => {
     cardTitle.innerHTML = card.title;
     cardDiv.appendChild(cardTitle);
 });
+
+const cardGridBtn = document.createElement('button');
+cardGridBtn.classList.add("cards__section-grid-btn");
+cardGridBtn.textContent = "SEE ALL";
+cardsContainer.appendChild(cardGridBtn);
