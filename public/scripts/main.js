@@ -24,7 +24,26 @@ const cardsGrid = document.createElement('div');
 cardsGrid.classList.add("cards__section-grid");
 cardsContainer.appendChild(cardsGrid);
 
-desktopData.map(card => {
+window.addEventListener('resize', () => {
+    window.location.reload();
+});
+
+function cardImagesData() {
+    const windowWidth = window.innerWidth;
+    let cardImageData;
+
+    if (windowWidth < 500) {
+        cardImageData = mobileData;
+    } else {
+        cardImageData = desktopData;
+    }
+
+    return cardImageData
+}
+
+const cardImages = cardImagesData();
+
+cardImages.map(card => {
     const cardDiv = document.createElement('div');
     cardDiv.classList.add("card");
     cardsGrid.appendChild(cardDiv);
