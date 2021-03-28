@@ -1,5 +1,5 @@
-import { desktopData } from '../../data/images-data.js';
-import { mobileData } from '../../data/images-data.js';
+import { desktopData } from '../../images-data.js';
+import { mobileData } from '../../images-data.js';
 
 const cardsContainer = document.getElementById('cards-container');
 

@@ -56,15 +56,6 @@ header .header-container .header__content h1 {
     color: var(--white-color);
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
 @media (max-width: 700px) {
     header nav ul {
         display: none;
