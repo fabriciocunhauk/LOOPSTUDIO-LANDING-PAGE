@@ -1,6 +1,6 @@
 export const desktopData = [
     {
-        image: './public/assets/images/desktop/image-deep-earth.jpg',
+        image: '../public/assets/images/desktop/image-deep-earth.jpg',
         title: 'DEEP EARTH'
     },
     {
