@@ -18,6 +18,23 @@ cardHeaderBtn.classList.add("cards__section-btn");
 cardHeaderBtn.textContent = "SEE ALL";
 cardHeaderDiv.appendChild(cardHeaderBtn);
 
+// Menu open
+
+const menuOpenBtn = document.getElementById('menu-hamburger');
+const menuCloseBtn = document.getElementById('menu__close');
+const openMenuDiv = document.querySelector('.menu__open');
+
+menuOpenBtn.addEventListener('click', openMenu);
+menuCloseBtn.addEventListener('click', closeMenu);
+
+function openMenu() {
+    openMenuDiv.style.display = "flex";
+}
+
+function closeMenu() {
+    openMenuDiv.style.display = "none";
+}
+
 // Cards
 
 const cardsGrid = document.createElement('div');

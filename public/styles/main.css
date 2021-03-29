@@ -10,10 +10,47 @@ header {
     background-size: cover;
 }
 
-header .header-container {
+header .header__container {
     width: 80%;
     height: 80%;
     margin-top: 5rem;
+}
+
+.header__container .menu__open {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: var(--black-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.menu__open .menu__open-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 82px;
+}
+
+.menu__open .menu__open-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 200px;
+    width: 100%;
+    height: 30%;
+}
+
+.menu__open .menu__open-list li a {
+    font-size: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    margin-left: 40px;
 }
 
 header nav {
@@ -24,18 +61,14 @@ header nav {
     color: var(--white-color);
 }
 
-header nav ul {
+header .header__container-list {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 20rem;
 }
 
-header nav ul li a {
-    color: var(--white-color);
-}
-
-header .header-container .header__content {
+header .header__container .header__content {
     display: flex;
     align-items: center;
     width: 40rem;
@@ -43,30 +76,36 @@ header .header-container .header__content {
     margin-bottom: 100px;
 
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 3em;
     line-height: 3.8rem;
     letter-spacing: 2px;
 
     border: 2px solid var(--white-color);
 }
 
-header .header-container .header__content h1 {
-    font-size: 3rem;
+header .header__container .header__content h1 {
+    font-size: 1em;
     margin: 2rem;
     color: var(--white-color);
 }
 
 @media (max-width: 700px) {
-    header nav ul {
+    header .header__container-list {
         display: none;
     }
 
-    header .header-container .header__content {
+    header .header__container .header__content {
         width: 20rem;
     }
 
-    header .header-container .header__content h1 {
+    header .header__container .header__content h1 {
         font-size: 2.2rem;
         line-height: 1;
+    }
+}
+
+@media (min-width: 700px) {
+    .hamburguer__menu {
+        display: none;
     }
 }
