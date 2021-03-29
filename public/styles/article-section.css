@@ -23,7 +23,7 @@
     position: absolute;
 }
 
-.article__container .article__content h1 {
+.article__container .article__content h2 {
     margin-top: 6rem;
     font-size: 2.4rem;
     font-family: 'Josefin Sans', sans-serif;

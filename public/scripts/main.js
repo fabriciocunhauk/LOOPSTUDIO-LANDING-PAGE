@@ -50,6 +50,7 @@ cardImages.map(card => {
 
     const cardImage = document.createElement('img');
     cardImage.setAttribute('src', card.image);
+    cardImage.setAttribute('alt', card.alt);
     cardDiv.appendChild(cardImage);
 
     const cardTitle = document.createElement('h2');
