@@ -16,6 +16,10 @@ header .header__container {
     margin-top: 5rem;
 }
 
+#menu-hamburger {
+    display: none;
+}
+
 .header__container .menu__open {
     display: none;
     flex-direction: column;
@@ -90,6 +94,10 @@ header .header__container .header__content h1 {
 }
 
 @media (max-width: 700px) {
+    #menu-hamburger {
+        display: flex;
+    }
+
     header .header__container-list {
         display: none;
     }
