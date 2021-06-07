@@ -42,7 +42,10 @@ cardsGrid.classList.add("cards__section-grid");
 cardsContainer.appendChild(cardsGrid);
 
 window.addEventListener('resize', () => {
-    window.location.reload();
+    const windowWidth = window.innerWidth;
+    if (windowWidth < 500) {
+        window.location.reload();
+    }
 });
 
 function cardImagesData() {
