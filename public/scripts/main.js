@@ -29,6 +29,7 @@ menuCloseBtn.addEventListener('click', closeMenu);
 
 function openMenu() {
     openMenuDiv.style.display = "flex";
+    openMenuDiv.style.position = "fixed";
 }
 
 function closeMenu() {
